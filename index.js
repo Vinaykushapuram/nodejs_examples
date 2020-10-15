@@ -1,11 +1,18 @@
-var rect=require('./rectangle');
+var rect={
+    perimete:(x,y)=>(2*(x+y)),
+    area:(x,y)=>(x*y)
+};
 
 
+function solve( l,b )
+{
+    if(l<=0 || b<=0 )console.log("check dimensions");
+    else
+    
+    {console.log(rect.perimete(l,b));
+          console.log(rect.area(l,b));
+    }
 
-
-
-rect.rectangle.perimeter(0,5);
-rect.rectangle.area(0,5);
-rect.rectangle.perimeter(3,5);
-rect.rectangle.area(3,5);
-
+}
+solve(0,2);
+solve(3,4);
