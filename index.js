@@ -11,6 +11,7 @@ function solve( l,b )
     }
     console.log("this should print after above calculation ");
 }
-    )
+    );
+}
 solve(0,2);
 solve(3,4);
